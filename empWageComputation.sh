@@ -14,3 +14,19 @@ echo "Employee is not precent";
 
 fi
 
+
+ispresentt=1;
+randcheckk=$((RANDOM%2));
+if [ $ispresentt -eq $randcheckk ];
+then
+wageperhr=20;
+fulldayhr=8;
+
+salary=$(($wageperhr*$fulldayhr));
+echo  $salary;
+
+else
+salary=0;
+
+fi
+
